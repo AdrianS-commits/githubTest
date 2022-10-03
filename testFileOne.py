@@ -11,6 +11,10 @@ def getInfo():
     nameLast = input("Please enter your last name, followed by enter ")
     return nameFirst, nameLast
 
-a,b = getInfo()
+def printInfo(g,h):
+    """A function to print the users first and last name"""
+    print("Hello, "+g.title() + " "+h.title())
 
-print("Welcome, " + a.title() + " " + b.title())
+
+a,b = getInfo()
+printInfo(a,b)
