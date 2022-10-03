@@ -15,6 +15,19 @@ def printInfo(g,h):
     """A function to print the users first and last name"""
     print("Hello, "+g.title() + " "+h.title())
 
+def getAge():
+    """Function to get the age of a user"""
+    age = int(input("Please enter your age "))
+    return age
+
+def printAge(age):
+    """A function to print the age"""
+    print(age)
+
+
 
 a,b = getInfo()
+c = getAge()
+
 printInfo(a,b)
+printAge(c)
